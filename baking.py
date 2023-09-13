@@ -17,7 +17,7 @@ def print_ingredients():  # Ways to work with strings/printing
     # 1.3 Using one print statement, use an f-string to print the ingredients
     # as a single string (make sure to add a space between each ingredient!)
     print(f'{ingredient_1} {ingredient_2} {ingredient_3} {ingredient_4}')
-#print_ingredients()
+# print_ingredients()
 
 def confirm_ingredients():  # String methods
     global ingredient_1, ingredient_2, ingredient_3, ingredient_4
@@ -49,7 +49,7 @@ def confirm_ingredients():  # String methods
     # print the string in the `ingredients` variable in all-caps now that it's right.
     print(ingredients.upper())
     
-#confirm_ingredients()
+# confirm_ingredients()
 
 
 def favorite_bake():  # User Input/Type conversion
@@ -59,11 +59,11 @@ def favorite_bake():  # User Input/Type conversion
     # 3.1 Create a variable called `baked_good`, that saves the user's input to the question:
     # What is your favorite baked good?
     baked_good = input("What is your favorite baked good? ", )
-    print(baked_good)
+    # print(baked_good)
 
     # 3.2 Create a second variable called `frequency` that asks the user:
     # Roughly how many times a month do you eat <baked_good>s? <-- use your `baked_good` variable in an f-string here
-    frequency = input(f"How many times a month do you eat {baked_good}? ", )
+    frequency = (input(f"How many times a month do you eat {baked_good}s? ", ))
 
     # When the user inputs a number, what data type is it saved as?
     # 3.3 Print out the _type_ of the `frequency` variable to check.
@@ -79,4 +79,4 @@ def favorite_bake():  # User Input/Type conversion
     print(f'Ooooh, {baked_good}s are delicious!')
     print(f'We recommend you eat {baked_good}s at least {int(frequency) * 2} times a month!')
     
-#favorite_bake()
+# favorite_bake()
